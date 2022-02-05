@@ -42,6 +42,12 @@ const menuBurger = () => {
     screenContainer.addEventListener("click", ()=>{
         menuActive();
     });
+
+    document.querySelectorAll(".menu__element").forEach(item =>{
+       item.addEventListener("click",()=>{
+           menuActive();
+       })
+    })
 }
 
 menuBurger();
