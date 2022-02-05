@@ -16,6 +16,7 @@ const menuBurger = () => {
 
     const buttonOpen = document.querySelector(".header__burger");
     const buttonClose = menuHamburger.querySelector(".menu__close");
+    const menuElement = document.querySelectorAll(".menu__element");
 
     /**
      * @menuActive - функция проверяет есть модификатор у элемента или нет
@@ -43,7 +44,7 @@ const menuBurger = () => {
         menuActive();
     });
 
-    document.querySelectorAll(".menu__element").forEach(item =>{
+    menuElement.forEach(item =>{
        item.addEventListener("click",()=>{
            menuActive();
        })
